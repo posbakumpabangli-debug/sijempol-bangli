@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard - SiJempol</title>
+  <style>
+    :root{--green:#2e7d32;--cream:#fffaf3;--shadow:0 6px 16px rgba(0,0,0,0.08);--radius:14px}
+    body{font-family:Inter,ui-sans-serif;background:var(--cream);margin:0;padding:0;color:#2c3e50;animation:fadeIn .8s ease}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+    header{background:#fff;box-shadow:var(--shadow);padding:16px 8%;display:flex;justify-content:space-between;align-items:center;animation:slideDown .9s ease}
+    @keyframes slideDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
+    .brand{display:flex;align-items:center;gap:10px}
+    .brand img{height:46px}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;padding:60px 8%;animation:fadeIn 1s ease}
+    .card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:30px;text-align:center;transition:.4s}
+    .card:hover{transform:translateY(-5px) scale(1.02)}
+    .card img{height:100px;margin-bottom:12px}
+    .btn{background:var(--green);color:#fff;text-decoration:none;padding:12px 24px;border-radius:10px;font-weight:600;transition:.3s;display:inline-block;margin-top:8px}
+    .btn:hover{background:#4caf50;transform:translateY(-2px)}
+    footer{text-align:center;padding:24px;background:#fff;margin-top:40px;color:#777;font-size:14px;animation:fadeIn 1s ease}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <img src="sijempol2.png" alt="Logo">
+      <strong style="color:var(--green)">Dashboard SiJempol</strong>
+    </div>
+    <a href="index.html" class="btn">Kembali ke Beranda</a>
+  </header>
+
+  <section class="card-grid">
+    <div class="card">
+      <img src="informasi-removebg-preview.png" alt="Chat Icon">
+      <h2>Layanan Virtual Chat</h2>
+      <p>Klik tombol di bawah untuk langsung berkonsultasi melalui WhatsApp dengan petugas Posbakum.</p>
+      <a href="https://wa.me/081386974108" target="_blank" class="btn">Mulai Chat WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <img src="hukum-removebg-preview.png" alt="Video Icon">
+      <h2>Layanan Video Call</h2>
+      <p>Konsultasi tatap muka daring menggunakan Zoom Meeting dengan petugas hukum.</p>
+      <a href="https://us05web.zoom.us/j/9708226528?pwd=61fIcedwuV4RDuj771OPdQHUquunCE.1&omn=84097753520" target="_blank" class="btn">Masuk ke Zoom</a>
+    </div>
+  </section>
+
+  <footer>© 2025 SiJempol - Pos Bantuan Hukum Online Pengadilan Agama Bangli</footer>
+</body>
+</html>
